@@ -101,7 +101,6 @@
     box-sizing: border-box;
     margin: auto;
     padding: 30px 10px 55px 10px;
-    overflow: hidden;
   }
 
   .container-left {
@@ -239,13 +238,21 @@
 
   /* THANKS PAGE MODAL */
 
+  .thanks-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10px;
+    box-sizing: border-box;
+  }
+
   .thanks-page-container {
-    margin: 175px 10px auto 10px;
     padding: 80px 10px;
     background: var(--c-light);
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     position: relative;
   }
 
@@ -277,6 +284,54 @@
     text-align: center;
     color: var(--txt-c-dark);
     margin: 0;
+  }
+
+  /* PROJECT MODAL */
+
+  .project-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    box-sizing: border-box;
+  }
+
+  .project-modal-container {
+    padding: 45px 0;
+    background: var(--c-light);
+    text-align: left;
+    position: relative;
+    box-sizing: border-box;
+    height: 85%;
+  }
+
+  .project-modal-scrollable  {
+    overflow-y: auto;
+    height: 100%;
+    padding: 0 25px;
+  }
+
+  .project-modal-img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .project-modal-title {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: var(--txt-c-dark);
+    margin: 0 0 25px 0;
+    text-decoration: none;
+    display: block;
+  }
+
+  .project-modal-text {
+    font-size: 16px;
+    line-height: 145%;
+    color: var(--txt-c-dark);
+    margin: 0 0 30px 0;
   }
 
   /* FRONT PAGE */
@@ -587,9 +642,13 @@
     padding-bottom: 0;
   }
 
+  .team-projects {
+    position: relative;
+    overflow: hidden;
+  }
+
   .team-projects-title {
     color: var(--txt-c-dark);
-    position: relative;
     margin-bottom: 40px;
   }
 
@@ -603,8 +662,8 @@
   }
 
   .team-projects-title-bgd {
-    top: -50px;
-    left: 45px;
+    top: 16px;
+    left: 58px;
     font-weight: bold;
     font-size: 150px;
     line-height: 180px;
