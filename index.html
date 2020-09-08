@@ -250,12 +250,12 @@
 
     <section class="callback-form">
         <div class="container">
-            <form action="" class="callback-form-container">
+            <form action="" class="callback-form-container" id="callback-form">
                 <h3 class="callback-form-title">/Are you minding [a project?]</h3>
                 <p class="callback-form-descr">Leave a request to discuss the task and technical requirements</p>
-                <input type="text" class="callback-form-input" placeholder="Name">
-                <input type="email" class="callback-form-input" placeholder="Email">
-                <input type="tel" class="callback-form-input" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Phone">
+                <input type="text" class="callback-form-input" placeholder="Name" id="callback-form-name-input">
+                <input type="email" class="callback-form-input" placeholder="Email" id="callback-form-email-input">
+                <input type="tel" class="callback-form-input" placeholder="+38 (0__) ___-__-__" id="callback-form-tel-input">
                 <input type="submit" class="callback-form-submit accent-btn" value="Discuss the project  —" id="request-received-btn">
             </form>
         </div>
@@ -391,7 +391,7 @@
         <!-- REQUEST -->
 
         <div class="modal thanks-modal modal-area-bgd" id="request-received">
-            <div class="thanks-page-container">
+            <div class="thanks-page-container modal-area-content">
                 <i class="fas fa-times modal-close-btn"></i>
                 <h3 class="thanks-page-title">{Thanks}</h3>
                 <p class="thanks-page-primary-msg">I've received your request/</p>
@@ -516,5 +516,6 @@
     <script src="js/calculator.js"></script>
     <script src="js/project-modals.js"></script>
     <script src="js/modals.js"></script>
+    <script src="js/callback-form.js"></script>
 </body>
 </html>

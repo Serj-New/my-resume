@@ -722,6 +722,10 @@
     margin-bottom: 30px;
   }
 
+  .input-error-border {
+    border: 1px solid red;
+  }
+
   .callback-form-submit {
     width: 240px;
     padding: 13px 10px;
